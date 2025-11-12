@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monitoreo Infantil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Monitoreo Infantil</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#presentaion">Presentaion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#etl">ETL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#diagramas">Diagramas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#herramienta">Herramienta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#github">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="mt-5">
+  <!-- Presentaion -->
+  <section id="presentaion" class="section section-light py-5">
+    <div class="container">
+      <h2 class="mb-3">Presentacion</h2>
+      <p class="lead">
+        Nosotros somos Julian David Coronado, Cristian Leonardo Moscoso y Nicolas Gutierrez de 701N,
+        estudiantes de ingeniería de sistemas y computación, de la Universidad de Cundinamarca. Nuestra herramienta
+        es un programa desarrollado con Flask para crear una ciudad virtual. Estoy enfocado en el monitoreo del
+        crecimiento de los niños, aportando datos y análisis para su desarrollo.
+      </p>
+    </div>
+  </section>
+
+  <!-- ETL -->
+  <section id="etl" class="section section-accent py-5">
+    <div class="container">
+      <h2 class="mb-3">ETL</h2>
+      <p>
+        ETL significa ‘Extract, Transform, Load’ (Extraer, Transformar y Cargar). Es un proceso fundamental en la gestión
+        de datos que se compone de tres etapas: extracción de datos de diferentes fuentes, transformación para darles un
+        formato adecuado y finalmente la carga en un sistema destino para su análisis y uso. Este proceso permite integrar
+        y preparar grandes volúmenes de información de manera eficiente.
+      </p>
+    </div>
+  </section>
+
+  <!-- Diagramas -->
+  <section id="diagramas" class="section section-light-alt py-5">
+    <div class="container">
+      <h2 class="mb-3">Diagramas</h2>
+      <p>Los diagramas ayudan a visualizar el funcionamiento y la estructura del proyecto.</p>
+      <div class="diagram-placeholder mt-4">
+        <div class="placeholder-box text-center p-5">
+          <span class="text-muted">Espacio para diagramas / imágenes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Herramienta -->
+  <section id="herramienta" class="section section-accent-alt py-5">
+    <div class="container">
+      <h2 class="mb-3">Herramienta</h2>
+      <p>
+        Nuestra herramienta está desarrollada con Flask, un framework de Python que facilita la creación de aplicaciones web.
+        Permite interactuar con la ciudad virtual, gestionar datos y monitorear aspectos específicos como el crecimiento infantil,
+        ofreciendo una interfaz intuitiva y funcional.
+      </p>
+      <a class="btn btn-primary btn-lg mt-3 transition" href="{{ url_for('herramienta') }}">👉 Ir a la Herramienta</a>
+    </div>
+  </section>
+
+  <!-- GitHub -->
+  <section id="github" class="section section-light py-5">
+    <div class="container">
+      <h2 class="mb-3">GitHub</h2>
+      <p class="mb-3">
+        Aquí pueden encontrar todo el código fuente del proyecto, instrucciones y recursos adicionales.
+      </p>
+      <!-- Reemplaza la URL de ejemplo por la de vuestro repositorio -->
+      <a class="btn btn-dark btn-lg mt-2 transition" href="https://github.com/usuario/repo" target="_blank" rel="noopener">👉 Ir al GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer bg-dark text-white py-3">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div>
+      <small>Julian David Coronado · Cristian Leonardo Moscoso · Nicolas Gutierrez — Universidad de Cundinamarca</small>
+    </div>
+    <div class="mt-2 mt-md-0">
+      <small class="text-muted">Logo Universidad de Cundinamarca</small>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
